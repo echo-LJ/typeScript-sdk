@@ -1,14 +1,15 @@
-import DummyClass from "../src/typescript-sdk"
+import TsSdk from "../src/typescript-sdk"
 
 /**
- * Dummy test
+ * TsSdk test
  */
-describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy()
+describe('TsSdk test', () => {
+    test('should return a number muti value', () => {
+      const a = 1
+      const b = 3
+  
+      const result = TsSdk.add(a, b)
+  
+      expect(result).toBe(4)
+    })
   })
-
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
-  })
-})
