@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "typescript-sdk",
   "version": "0.0.0",
   "description": "",
@@ -11,19 +10,6 @@
     "dist"
   ],
   "author": "lujing01 <lujing01@longfor.com>",
-=======
-  "name": "--libraryname--",
-  "version": "0.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "dist/--libraryname--.umd.js",
-  "module": "dist/--libraryname--.es5.js",
-  "typings": "dist/types/--libraryname--.d.ts",
-  "files": [
-    "dist"
-  ],
-  "author": "--username-- <--usermail-->",
->>>>>>> cdeaeceb7d1216b76a3c13dbf82935cbe564c052
   "repository": {
     "type": "git",
     "url": ""
@@ -33,10 +19,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-<<<<<<< HEAD
     "dev": "node examples/server.js",
-=======
->>>>>>> cdeaeceb7d1216b76a3c13dbf82935cbe564c052
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
@@ -50,10 +33,6 @@
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
-<<<<<<< HEAD
-=======
-    "postinstall": "ts-node tools/init",
->>>>>>> cdeaeceb7d1216b76a3c13dbf82935cbe564c052
     "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {

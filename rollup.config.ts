@@ -7,11 +7,7 @@ import json from 'rollup-plugin-json'
 
 const pkg = require('./package.json')
 
-<<<<<<< HEAD
 const libraryName = 'typescript-sdk'
-=======
-const libraryName = '--libraryname--'
->>>>>>> cdeaeceb7d1216b76a3c13dbf82935cbe564c052
 
 export default {
   input: `src/${libraryName}.ts`,
